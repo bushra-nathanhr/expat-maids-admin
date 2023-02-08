@@ -1,0 +1,134 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+// Roots
+
+$white-color: #ffffff;
+$black-color: #000;
+$primary-color: #000;
+$secondary-color: #000;
+$primary-btn-color: #138be5;
+$secondary-btn-color: #138be5;
+$title-color: #061e3e;
+$text-color: #061e3e;
+$subtext-color: #061e3eb5;
+$lexa-font: "Lexend Deca", sans-serif;
+
+// RESET
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
+  @media only screen and (max-width: 600px) {
+    transition: 0.3s ease-in-out;
+  }
+}
+html {
+  scroll-behavior: smooth !important;
+}
+// body {
+//   overflow-x: hidden;
+// }
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  padding: 0px;
+}
+// .container-xl {
+//   max-width: 1536px;
+// }
+// .container-lg {
+//   max-width: 1200px;
+// }
+// .container-md {
+//   max-width: 900px;
+// }
+// .container-sm {
+//   max-width: 600px;
+// }
+.col {
+  padding: 0px;
+}
+.inset-fix {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  scroll-margin-top: 5.35rem;
+}
+
+//TEXTS
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0px;
+}
+
+.title {
+  color: $title-color;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 3rem;
+  max-width: 30rem;
+  line-height: 3rem;
+}
+.subtext {
+  color: $subtext-color;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+.text {
+  color: $text-color;
+}
+
+// BUTTONS 
+
+.primary-btn {
+  background: $primary-btn-color;
+  padding: 1rem;
+  border: 0.068rem solid $primary-btn-color;
+  color: $white-color;
+  max-width: 27rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+  letter-spacing: -0.04rem;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: 0.4s ease-in-out;
+  transition-delay: 500ms;
+  &:hover {
+    background: $white-color;
+    color: $primary-btn-color;
+  }
+}
+.secondary-btn {
+  background: $secondary-btn-color;
+  padding: 1rem;
+  border: 0.068rem solid $primary-btn-color;
+  color: $white-color;
+  max-width: 27rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+  letter-spacing: -0.04rem;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: 0.4s ease-in-out;
+  transition-delay: 500ms;
+  &:hover {
+    background: $white-color;
+    color: $secondary-btn-color;
+  }
+}
