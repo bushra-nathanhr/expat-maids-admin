@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://nathangolfday.com/
+
+# Sitemaps
+Sitemap: https://nathangolfday.com/sitemap.xml
